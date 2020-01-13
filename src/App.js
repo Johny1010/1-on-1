@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import { BrowserRouter } from 'react-router-dom';
+
 import Header from './components/Header/Header';
 import Diet from './components/Diet/Diet';
 import Training from './components/Training/Training';

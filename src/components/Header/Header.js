@@ -11,21 +11,21 @@ const Header = (props) => {
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#features">Diet</Nav.Link>
-                    <Nav.Link href="#pricing">Training plans</Nav.Link>
+                    <Nav.Link href="diet">Diet</Nav.Link>
+                    <Nav.Link href="training-plans">Training plans</Nav.Link>
                     <NavDropdown title="Your section" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Daily diet</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Your training</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Your body</NavDropdown.Item>
+                        <NavDropdown.Item href="user/daily-diet">Daily diet</NavDropdown.Item>
+                        <NavDropdown.Item href="user/training">Your training</NavDropdown.Item>
+                        <NavDropdown.Item href="user/dimensions">Your body</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Add product</NavDropdown.Item>
+                        <NavDropdown.Item href="add-product">Add product</NavDropdown.Item>
                         <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.5">Custom training plan</NavDropdown.Item>
+                        <NavDropdown.Item href="add-training-plan">Custom training plan</NavDropdown.Item>
                     </NavDropdown>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="#deets">Login</Nav.Link>
-                    <Nav.Link href="#memes">Register</Nav.Link>
+                    <Nav.Link href="login">Login</Nav.Link>
+                    <Nav.Link href="register">Register</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
