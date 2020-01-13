@@ -2,10 +2,18 @@ import React from 'react';
 import './App.css';
 
 import Header from './components/Header/Header';
+import Diet from './components/Diet/Diet';
+import Training from './components/Training/Training';
+import User from './components/User/User';
 
 function App() {
     return (
-        <Header/>
+        <div>
+            <Header/>
+            <Diet/>
+            <Training/>
+            <User/>
+        </div>
     );
 }
 
