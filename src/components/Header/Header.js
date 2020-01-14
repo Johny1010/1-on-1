@@ -7,7 +7,7 @@ import classes from './Header.module.css';
 const Header = (props) => {
     return(
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">Fit App</Navbar.Brand>
+            <Navbar.Brand href="/">Fit App</Navbar.Brand>
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">

@@ -1,26 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad9ca7b9-cbe8-46d8-a002-0ffe4bfc2c71" name="Default Changelist" comment="Init commit">
-      <change afterPath="$PROJECT_DIR$/src/components/Diet/Diet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Diet/Diet.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Training/Training.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Training/Training.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/Dimensions/Dimensions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/Dimensions/Dimensions.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/User.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/User.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/UserDiet/UserDiet.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/UserDiet/UserDiet.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/UserPlan/UserPlan.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/User/UserPlan/UserPlan.module.css" afterDir="false" />
+    <list default="true" id="ad9ca7b9-cbe8-46d8-a002-0ffe4bfc2c71" name="Default Changelist" comment="feat(structure): app structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/User/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/User.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +34,11 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sch edit view/appoint-container" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="file.status.colors" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -94,8 +79,31 @@
       <option name="presentableId" value="Default" />
       <updated>1578654643016</updated>
       <workItem from="1578654644458" duration="4304000" />
-      <workItem from="1578918441047" duration="3457000" />
+      <workItem from="1578918441047" duration="9764000" />
+      <workItem from="1578990124230" duration="2726000" />
     </task>
+    <task id="LOCAL-00001" summary="feat(structure): app structure">
+      <created>1578922106751</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1578922106751</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat(structure): app structure 2">
+      <created>1578925708726</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1578925708726</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(routing): add simple routing">
+      <created>1578928060328</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1578928060328</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,25 +111,28 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Init commit" />
+    <MESSAGE value="feat(structure): app structure" />
+    <MESSAGE value="feat(structure): app structure 2" />
+    <MESSAGE value="feat(routing): add simple routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(routing): add simple routing" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="385" width="468" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578657417531">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="722" y="385" width="468" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578657417531" />
-    <state x="571" y="177" width="770" height="802" key="CommitChangelistDialog2" timestamp="1578922095082">
+    <state x="571" y="177" width="770" height="802" key="CommitChangelistDialog2" timestamp="1578931107398">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="571" y="177" width="770" height="802" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578922095082" />
-    <state x="183" y="99" width="1538" height="955" key="DiffContextDialog" timestamp="1578922042788">
+    <state x="571" y="177" width="770" height="802" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578931107398" />
+    <state x="183" y="99" width="1538" height="955" key="DiffContextDialog" timestamp="1578923133593">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="183" y="99" width="1538" height="955" key="DiffContextDialog/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578922042788" />
-    <state x="743" y="338" width="426" height="481" key="FileChooserDialogImpl" timestamp="1578654723864">
+    <state x="183" y="99" width="1538" height="955" key="DiffContextDialog/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578923133593" />
+    <state x="743" y="338" width="426" height="481" key="FileChooserDialogImpl" timestamp="1578990170627">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="743" y="338" width="426" height="481" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578654723864" />
+    <state x="743" y="338" width="426" height="481" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578990170627" />
     <state width="1897" height="315" key="GridCell.Tab.0.bottom" timestamp="1578659166947">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -138,9 +149,13 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state width="1897" height="315" key="GridCell.Tab.0.right/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578659166947" />
-    <state x="555" y="316" width="802" height="525" key="Vcs.Push.Dialog.v2" timestamp="1578658227283">
+    <state x="464" y="215" key="SettingsEditor" timestamp="1578925654985">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="555" y="316" width="802" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578658227283" />
+    <state x="464" y="215" key="SettingsEditor/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578925654985" />
+    <state x="555" y="316" width="802" height="525" key="Vcs.Push.Dialog.v2" timestamp="1578925711724">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="555" y="316" width="802" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578925711724" />
   </component>
 </project>

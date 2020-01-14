@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 
-import { Route } from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 
 import Header from './components/Header/Header';
 import Diet from './components/Diet/Diet';
@@ -12,9 +12,9 @@ function App() {
     return (
         <div>
             <Header/>
-            <Route path="/diet" render={() => <Diet/>}/>
-            <Route path="/training-plans" render={() => <Training/>}/>
-            <Route path="/user" render={() => <User/>}/>
+            <Route path="/diet" component={Diet}/>
+            <Route path="/training-plans" component={Training}/>
+            <Route path="/user" component={User}/>
         </div>
     );
 }
