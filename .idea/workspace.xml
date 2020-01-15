@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad9ca7b9-cbe8-46d8-a002-0ffe4bfc2c71" name="Default Changelist" comment="feat(structure): app structure">
+    <list default="true" id="ad9ca7b9-cbe8-46d8-a002-0ffe4bfc2c71" name="Default Changelist" comment="feat(redux, hooks): redux + hooks simple example">
+      <change afterPath="$PROJECT_DIR$/src/components/Diet/Product/Product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Diet/Product/Product.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/User/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/User/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Diet/Diet.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Diet/Diet.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,7 +35,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../sch edit view/appoint-container" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -80,7 +81,10 @@
       <updated>1578654643016</updated>
       <workItem from="1578654644458" duration="4304000" />
       <workItem from="1578918441047" duration="9764000" />
-      <workItem from="1578990124230" duration="2726000" />
+      <workItem from="1578990124230" duration="2899000" />
+      <workItem from="1579072667091" duration="2491000" />
+      <workItem from="1579081566218" duration="6404000" />
+      <workItem from="1579093978906" duration="2591000" />
     </task>
     <task id="LOCAL-00001" summary="feat(structure): app structure">
       <created>1578922106751</created>
@@ -103,7 +107,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578928060328</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="feat(routing): add simple routing">
+      <created>1578995113044</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1578995113044</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(redux, hooks): redux + hooks simple example">
+      <created>1579092661610</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1579092661610</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -114,25 +132,26 @@
     <MESSAGE value="feat(structure): app structure" />
     <MESSAGE value="feat(structure): app structure 2" />
     <MESSAGE value="feat(routing): add simple routing" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(routing): add simple routing" />
+    <MESSAGE value="feat(redux, hooks): redux + hooks simple example" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(redux, hooks): redux + hooks simple example" />
   </component>
   <component name="WindowStateProjectService">
     <state x="722" y="385" width="468" height="386" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578657417531">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="722" y="385" width="468" height="386" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578657417531" />
-    <state x="571" y="177" width="770" height="802" key="CommitChangelistDialog2" timestamp="1578931107398">
+    <state x="571" y="177" width="770" height="802" key="CommitChangelistDialog2" timestamp="1579093462079">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="571" y="177" width="770" height="802" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578931107398" />
+    <state x="571" y="177" width="770" height="802" key="CommitChangelistDialog2/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1579093462079" />
     <state x="183" y="99" width="1538" height="955" key="DiffContextDialog" timestamp="1578923133593">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="183" y="99" width="1538" height="955" key="DiffContextDialog/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578923133593" />
-    <state x="743" y="338" width="426" height="481" key="FileChooserDialogImpl" timestamp="1578990170627">
+    <state x="743" y="338" width="426" height="481" key="FileChooserDialogImpl" timestamp="1579078643007">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="743" y="338" width="426" height="481" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578990170627" />
+    <state x="743" y="338" width="426" height="481" key="FileChooserDialogImpl/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1579078643007" />
     <state width="1897" height="315" key="GridCell.Tab.0.bottom" timestamp="1578659166947">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
@@ -153,9 +172,9 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="464" y="215" key="SettingsEditor/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578925654985" />
-    <state x="555" y="316" width="802" height="525" key="Vcs.Push.Dialog.v2" timestamp="1578925711724">
+    <state x="555" y="316" width="802" height="525" key="Vcs.Push.Dialog.v2" timestamp="1579092664305">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="555" y="316" width="802" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1578925711724" />
+    <state x="555" y="316" width="802" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1160/1920.0.1920.1200@0.0.1920.1160" timestamp="1579092664305" />
   </component>
 </project>
