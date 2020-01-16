@@ -13,13 +13,13 @@ const Diet = (props) => {
 
     let productsList = (
       <div>
-          {products.map((product, index) => {
+          {products.map((product) => {
               return <Product
                   name={product.name}
                   carb={product.carbs}
                   fat={product.fat}
                   proteins={product.prot}
-                  key={index}/>
+                  key={product.name}/>
           })}
       </div>
     );
