@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 
 import * as actionTypes from '../../../../store/actions';
 
 import classes from './NewProduct.module.css';
 
 const NewProduct = (props) => {
-    const products = useSelector(state => state.product);
     const dispatch = useDispatch();
 
     let [product, setProduct] = useState({
