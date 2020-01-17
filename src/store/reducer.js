@@ -35,17 +35,24 @@ const reducer = (state = initialState, action) => {
         case actionTypes.ADD_PRODUCT:
             return {
                 ...state,
-                product: {
+                product: [
                     ...state.product,
-                    [action.productName]: state.product[action.index][action.productName] + 1
-                }
+                    {
+                        name: action.productName,
+                        carbs: action.productCarbs,
+                        fat: action.productFat,
+                        prot: action.productProteins
+                    }
+                ],
             };
         case actionTypes.REMOVE_PRODUCT:
             return {
                 ...state,
                 product: {
                     ...state.product,
-                    [action.productName]: state.product[action.index][action.productName] - 1
+                    [action.productName]: state.product[action.productName].carbs - 1,
+                    [action.productName]: state.product[action.productName].fat - 2,
+                    [action.productName]: state.product[action.productName].prot - 3,
                 }
             };
         default:

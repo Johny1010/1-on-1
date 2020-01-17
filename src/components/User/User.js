@@ -10,8 +10,6 @@ import classes from './User.module.css';
 
 const User = (props) => {
 
-    console.log(`/user/daily-diet`);
-
     return(
         <div>
             <Route path={`/user/daily-diet`} component={UserDiet} />

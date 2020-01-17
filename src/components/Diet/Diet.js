@@ -4,31 +4,34 @@ import { useDispatch, useSelector } from 'react-redux';
 import * as actionTypes from '../../store/actions';
 
 import Product from './Product/Product';
+import NewProduct from './Product/NewProduct/NewProduct';
 
 import classes from './Diet.module.css';
 
 const Diet = (props) => {
     const products = useSelector(state => state.product);
-    const dispatch = useDispatch();
 
     let productsList = (
       <div>
           {products.map((product) => {
-              return <Product
-                  name={product.name}
-                  carb={product.carbs}
-                  fat={product.fat}
-                  proteins={product.prot}
-                  key={product.name}/>
+              return (
+                  <div>
+                      <Product
+                          name={product.name}
+                          carb={product.carbs}
+                          fat={product.fat}
+                          proteins={product.prot}
+                          key={product.name}/>
+                  </div>
+              )
           })}
       </div>
     );
 
     return(
         <div>
+            <NewProduct/>
             <div>{ productsList }</div>
-            <button onClick={() => dispatch({type: actionTypes.ADD_PRODUCT, productName: 'carbs'})}>+</button>
-            <button onClick={() => dispatch({type: actionTypes.REMOVE_PRODUCT, productName: 'carbs'})}>-</button>
         </div>
 
     )
