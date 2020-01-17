@@ -10,7 +10,7 @@ const NewProduct = (props) => {
 
     let [product, setProduct] = useState({
         name: '',
-        carbs: 1,
+        carbs: 1.5,
         fat: 1,
         prot: 1
     });
@@ -25,17 +25,17 @@ const NewProduct = (props) => {
             <label>Carbs: </label>
             <input type="number"
                    value={product.carbs}
-                   onChange={event => setProduct({...product, carbs: parseInt(event.target.value)})}/>
+                   onChange={event => setProduct({...product, carbs: parseFloat(event.target.value)})}/>
             <span> kcal, </span>
             <label>Fat: </label>
             <input type="number"
                    value={product.fat}
-                   onChange={event => setProduct({...product, fat: parseInt(event.target.value)})}/>
+                   onChange={event => setProduct({...product, fat: parseFloat(event.target.value)})}/>
             <span> kcal, </span>
             <label>Proteins: </label>
             <input type="number"
                    value={product.prot}
-                   onChange={event => setProduct({...product, prot: parseInt(event.target.value)})}/>
+                   onChange={event => setProduct({...product, prot: parseFloat(event.target.value)})}/>
             <span> kcal </span>
             <br/>
             <button onClick={() => dispatch({type: actionTypes.ADD_PRODUCT,

@@ -1,12 +1,10 @@
 import React from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-
-import * as actionTypes from '../../store/actions';
+import { useSelector } from 'react-redux';
 
 import Product from './Product/Product';
-import NewProduct from './Product/NewProduct/NewProduct';
 
 import classes from './Diet.module.css';
+import NewProduct from './Product/NewProduct/NewProduct';
 
 const Diet = (props) => {
     const products = useSelector(state => state.product);
