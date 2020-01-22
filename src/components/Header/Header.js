@@ -1,34 +1,25 @@
 import React from 'react';
 
-import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
 import classes from './Header.module.css';
 
 const Header = (props) => {
     return(
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="/">Fit App</Navbar.Brand>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-                <Nav className="mr-auto">
-                    <Nav.Link href="/diet">Diet</Nav.Link>
-                    <Nav.Link href="/training-plans">Training plans</Nav.Link>
-                    <NavDropdown title="Your section" id="collasible-nav-dropdown">
-                        <NavDropdown.Item href="/user/daily-diet">Daily diet</NavDropdown.Item>
-                        <NavDropdown.Item href="/user/training">Your training</NavDropdown.Item>
-                        <NavDropdown.Item href="/user/dimensions">Your body</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="/add-product">Add product</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="/add-training-plan">Custom training plan</NavDropdown.Item>
-                    </NavDropdown>
-                </Nav>
-                <Nav>
-                    <Nav.Link href="/login">Login</Nav.Link>
-                    <Nav.Link href="/register">Register</Nav.Link>
-                </Nav>
-            </Navbar.Collapse>
-        </Navbar>
+        <header>
+            <nav>
+                <ul>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to={{pathname: '/diet'}}>Diet</Link></li>
+                    <li><Link to={{pathname: '/training-plans'}}>Training</Link></li>
+                    <li><Link to={{pathname: '/user/daily-diet'}}>Daily diet</Link></li>
+                    <li><Link to={{pathname: '/user/training'}}>Your training</Link></li>
+                    <li><Link to={{pathname: '/user/dimensions'}}>Your body</Link></li>
+                    <li><Link to={{pathname: '/add-product'}}>Add product</Link></li>
+                    <li><Link to={{pathname: '/add-training-plan'}}>Custom training plan</Link></li>
+                </ul>
+            </nav>
+        </header>
     )
 };
 

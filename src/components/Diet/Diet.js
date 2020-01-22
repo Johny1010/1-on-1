@@ -28,7 +28,6 @@ const Diet = (props) => {
 
     return(
         <div>
-            <NewProduct/>
             <div>{ productsList }</div>
         </div>
 
