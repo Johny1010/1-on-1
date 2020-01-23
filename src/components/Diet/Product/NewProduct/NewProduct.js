@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 
-import * as actionTypes from '../../../../store/actions';
+import { addProduct } from '../../../../store/actions';
 
 import classes from './NewProduct.module.css';
 
@@ -38,11 +38,7 @@ const NewProduct = (props) => {
                    onChange={event => setProduct({...product, prot: parseFloat(event.target.value)})}/>
             <span> kcal </span>
             <br/>
-            <button onClick={() => dispatch({type: actionTypes.ADD_PRODUCT,
-                productName: product.name,
-                productCarbs: product.carbs,
-                productFat: product.fat,
-                productProteins: product.prot})}>+</button>
+            <button onClick={() => dispatch(addProduct(product.name, product.carbs, product.fat, product.prot))}>+</button>
         </div>
     )
 };
