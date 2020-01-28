@@ -1,13 +1,21 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, {useEffect} from 'react';
+import {useDispatch, useSelector} from 'react-redux';
+
+import * as actionCreators from '../../store/actions';
 
 import Product from './Product/Product';
 
 import classes from './Diet.module.css';
-import NewProduct from './Product/NewProduct/NewProduct';
 
 const Diet = (props) => {
     const products = useSelector(state => state.product);
+    const dispatch = useDispatch();
+
+    const onProductInit = () => dispatch(actionCreators.fetchProductsInit());
+
+    useEffect(() => {
+        onProductInit();
+    }, [onProductInit]);
 
     let productsList = (
       <div>
@@ -25,6 +33,12 @@ const Diet = (props) => {
           })}
       </div>
     );
+
+    // [to do (maybe)] add jafar
+
+    // [to do] add error view if fetching product fail (probably error modal for whole app)
+
+    // [to do] add product details view (with photo and description) -> dispatch remove product here
 
     return(
         <div>

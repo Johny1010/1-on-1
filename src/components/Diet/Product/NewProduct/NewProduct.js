@@ -15,6 +15,9 @@ const NewProduct = (props) => {
         prot: 1
     });
 
+    // [to do] add sum up modal and sent product there -> props, and dispatch add product there, redirect -> Diet component
+
+
     return(
         <div>
             <label>Product name: </label>
@@ -38,7 +41,7 @@ const NewProduct = (props) => {
                    onChange={event => setProduct({...product, prot: parseFloat(event.target.value)})}/>
             <span> kcal </span>
             <br/>
-            <button onClick={() => dispatch(actionCreators.saveResult(product.name, product.carbs, product.fat, product.prot))}>+</button>
+            <button onClick={() => dispatch(actionCreators.addProductInit(product))}>+</button>
         </div>
     )
 };

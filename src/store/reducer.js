@@ -1,49 +1,35 @@
 import * as actionTypes from './actions';
 
 const initialState = {
-    product: [
-        {
-            name: 'product1',
-            carbs: 0,
-            fat: 2,
-            prot: 1
-        },
-        {
-            name: 'product2',
-            carbs: 1,
-            fat: 1,
-            prot: 1
-        },
-        {
-            name: 'product3',
-            carbs: 2,
-            fat: 2,
-            prot: 3
-        },
-        {
-            name: 'product4',
-            carbs: 4,
-            fat: 5,
-            prot: 7
-        },
-    ],
+    product: [],
     globalTest: 10
 };
 
+// [to do] add init products action -> products from firebase
+
+// [to do] add error action, and init error = false
+
+// [to do] add remove product action
+
 const reducer = (state = initialState, action) => {
     switch (action.type) {
-        case actionTypes.ADD_PRODUCT:
+        case actionTypes.ADD_PRODUCT_SUCCESS:
             return {
                 ...state,
                 product: [
                     ...state.product,
                     {
-                        name: action.productName,
-                        carbs: action.productCarbs,
-                        fat: action.productFat,
-                        prot: action.productProteins
+                        name: action.product.name,
+                        carbs: action.product.carbs,
+                        fat: action.product.fat,
+                        prot: action.product.prot
                     }
                 ],
+            };
+        case actionTypes.FETCH_PRODUCTS_SUCCESS:
+            return {
+                ...state,
+                product: action.products
             };
         case actionTypes.REMOVE_PRODUCT:
             return {
