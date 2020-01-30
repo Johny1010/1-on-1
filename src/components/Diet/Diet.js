@@ -1,9 +1,11 @@
 import React, {useEffect} from 'react';
 import {useDispatch, useSelector} from 'react-redux';
+import {Link, Route} from 'react-router-dom';
 
 import * as actionCreators from '../../store/actions';
 
 import Product from './Product/Product';
+import ProductDescription from './Product/ProductDescription/ProductDescription';
 
 import classes from './Diet.module.css';
 
@@ -15,19 +17,26 @@ const Diet = (props) => {
 
     useEffect(() => {
         onProductInit();
-    }, [onProductInit]);
+    }, [1]);
 
     let productsList = (
       <div>
           {products.map((product) => {
+              let newTo = {
+                  pathname: '/diet/' + product.id,
+                  product: product
+              };
               return (
-                  <div>
-                      <Product
-                          name={product.name}
-                          carb={product.carbs}
-                          fat={product.fat}
-                          proteins={product.prot}
-                          key={product.name}/>
+                  <div
+                      key={product.id}>
+                      <Link to={newTo}
+                      params={product}>
+                          <Product
+                              name={product.name}
+                              carb={product.carbs}
+                              fat={product.fat}
+                              proteins={product.prot}/>
+                      </Link>
                   </div>
               )
           })}
@@ -43,6 +52,7 @@ const Diet = (props) => {
     return(
         <div>
             <div>{ productsList }</div>
+            <Route path="/diet/:id" component={ProductDescription}/>
         </div>
 
     )

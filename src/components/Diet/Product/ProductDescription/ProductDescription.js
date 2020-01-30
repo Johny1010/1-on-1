@@ -2,9 +2,18 @@ import React from 'react';
 
 import classes from './ProductDescription.module.css';
 
-const ProductDescription = () => {
+const ProductDescription = (props) => {
+  const product = props.location.product;
+
+  // [to do] add more fields to product: description, photo...
+
   return (
-      <div>Product description</div>
+      <div>
+        <h1>Product: {product.name}</h1>
+        <p>Carbs:{product.carbs}</p>
+        <p>Fat:{product.fat}</p>
+        <p>Proteins:{product.prot}</p>
+      </div>
   )
 };
 
