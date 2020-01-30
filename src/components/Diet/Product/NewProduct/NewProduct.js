@@ -4,6 +4,8 @@ import { useDispatch } from 'react-redux';
 import * as actionCreators from '../../../../store/actions';
 
 import classes from './NewProduct.module.css';
+import ToggleContent from '../../../../hoc/ToogleContent/ToggleContent';
+import Modal from '../../../UI/Modal/Modal';
 
 const NewProduct = (props) => {
     const dispatch = useDispatch();
@@ -41,7 +43,15 @@ const NewProduct = (props) => {
                    onChange={event => setProduct({...product, prot: parseFloat(event.target.value)})}/>
             <span> kcal </span>
             <br/>
-            <button onClick={() => dispatch(actionCreators.addProductInit(product))}>+</button>
+            <ToggleContent
+                toggle={show => <button onClick={show}>Open</button>}
+                content={hide => (
+                    <Modal>
+                        <button onClick={() => dispatch(actionCreators.addProductInit(product))}>+</button>
+                        <button onClick={hide}>Close</button>
+                    </Modal>
+                )}
+            />
         </div>
     )
 };
