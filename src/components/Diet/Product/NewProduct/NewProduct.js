@@ -17,8 +17,7 @@ const NewProduct = (props) => {
         prot: 1
     });
 
-    // [to do] add sum up modal and sent product there -> props, and dispatch add product there, redirect -> Diet component
-
+    // [to do] redirect -> Diet component after dispatch
 
     return(
         <div>
@@ -44,11 +43,14 @@ const NewProduct = (props) => {
             <span> kcal </span>
             <br/>
             <ToggleContent
-                toggle={show => <button onClick={show}>Open</button>}
+                toggle={show => <button onClick={show}>Add product</button>}
                 content={hide => (
-                    <Modal>
-                        <button onClick={() => dispatch(actionCreators.addProductInit(product))}>+</button>
-                        <button onClick={hide}>Close</button>
+                    <Modal hide={hide}>
+                        <h2>{product.name}</h2>
+                        <p>Carbs: {product.carbs}</p>
+                        <p>Fat: {product.fat}</p>
+                        <p>Proteins: {product.prot}</p>
+                        <button onClick={() => dispatch(actionCreators.addProductInit(product))}>Confirm and add product</button>
                     </Modal>
                 )}
             />
