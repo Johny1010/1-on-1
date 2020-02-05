@@ -22,7 +22,6 @@ export const addProductInit = (product) => {
     return dispatch => {
         axios.post('/products.json', product )
             .then(response => {
-                console.log(response.data);
                 dispatch(addProductSuccess(product));
             })
             .catch(error => {
@@ -45,9 +44,11 @@ export const  addProductFail = (error) => {
     }
 };
 
+// [to do] add limit filter for user (limitToLast = value)
+
 export const fetchProductsInit = () => {
   return dispatch => {
-      axios.get('products.json')
+      axios.get('products.json?orderBy="name"&limitToLast=10')
           .then (res => {
               const fetchedProducts = [];
               for (let key in res.data) {

@@ -13,11 +13,11 @@ const Diet = (props) => {
     const products = useSelector(state => state.product);
     const dispatch = useDispatch();
 
-    const onProductInit = () => dispatch(actionCreators.fetchProductsInit());
+    const onProductsInit = () => dispatch(actionCreators.fetchProductsInit());
 
     useEffect(() => {
-        onProductInit();
-    }, [1]);
+        onProductsInit();
+    }, []);
 
     let productsList = (
       <div>
@@ -30,7 +30,8 @@ const Diet = (props) => {
                   <div
                       key={product.id}>
                       <Link to={newTo}
-                      params={product}>
+                            className={classes.Product}
+                            params={product}>
                           <Product
                               name={product.name}
                               carb={product.carbs}
@@ -43,16 +44,18 @@ const Diet = (props) => {
       </div>
     );
 
-    // [to do (maybe)] add jafar
+    // [to do (maybe)] add jafar form control
 
     // [to do] add error view if fetching product fail (probably error modal for whole app)
 
     // [to do] add product details view (with photo and description) -> dispatch remove product here
 
     return(
-        <div>
-            <div>{ productsList }</div>
-            <Route path="/diet/:id" component={ProductDescription}/>
+        <div className={"row"}>
+            <div className={"col-md-6" + ' ' + classes.Product}>{ productsList }</div>
+            <div className={"col-md-6"}>
+                <Route path="/diet/:id" component={ProductDescription}/>
+            </div>
         </div>
 
     )

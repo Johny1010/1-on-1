@@ -12,9 +12,9 @@ const NewProduct = (props) => {
 
     let [product, setProduct] = useState({
         name: '',
-        carbs: 1.5,
-        fat: 1,
-        prot: 1
+        carbs: null,
+        fat: null,
+        prot: null
     });
 
     // [to do] redirect -> Diet component after dispatch

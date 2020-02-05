@@ -10,11 +10,13 @@ const Product = (props) => {
     };
 
     return(
-        <div>
-            <h1>Product: {props.name}</h1>
-            <p>Carbs:{props.carb}</p>
-            <p>Fat:{props.fat}</p>
-            <p>Proteins:{props.proteins}</p>
+        <div className={classes.ProductCard}>
+            <h3>{props.name}</h3>
+            <div className={classes.Macros}>
+                <p>Carbs: {props.carb} kcal</p>
+                <p>Fat: {props.fat} kcal</p>
+                <p>Proteins: {props.proteins} kcal</p>
+            </div>
             <p>Sum: {sumCalculator()} kcal</p>
         </div>
     )
