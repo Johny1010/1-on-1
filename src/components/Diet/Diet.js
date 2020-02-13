@@ -33,10 +33,7 @@ const Diet = (props) => {
                             className={classes.Product}
                             params={product}>
                           <Product
-                              name={product.name}
-                              carb={product.carbs}
-                              fat={product.fat}
-                              proteins={product.prot}/>
+                              product={product}/>
                       </Link>
                   </div>
               )

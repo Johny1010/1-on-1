@@ -10,6 +10,7 @@ const ProductDescription = (props) => {
   return (
       <div>
         <h1>Product: {product.name}</h1>
+          <h2>Tu będzie fota: {product.description}</h2>
         <p>Carbs:{product.carbs}</p>
         <p>Fat:{product.fat}</p>
         <p>Proteins:{product.prot}</p>
